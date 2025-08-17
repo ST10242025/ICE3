@@ -19,7 +19,7 @@ android {
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
-        buildConfigField("String", "ACCUWEATHER_API_KEY", "${apikeyProperties["ACCUWEATHER_API_KEY"]}")
+        buildConfigField("String", "ACCUWEATHER_API_KEY", "\"${apikeyProperties["ACCUWEATHER_API_KEY"]}\"")
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -47,10 +47,9 @@ android {
 }
 
 dependencies {
-    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
     implementation ("com.android.volley:volley:1.2.1")
-    implementation ("com.google.code.gson:gson:2.13.1")
-    implementation ("com.google.code.gson:gson:2.13.1")
+    implementation ("com.google.android.material:material:1.9.0")
+    implementation ("com.google.code.gson:gson:2.10.1")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
