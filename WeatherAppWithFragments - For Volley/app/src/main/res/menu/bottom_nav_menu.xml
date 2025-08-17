@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home_icon"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nav_one_day"
+        android:icon="@drawable/weather_icon"
+        android:title="1-Day" />
+
+    <item
+        android:id="@+id/nav_five_day"
+        android:icon="@drawable/weather_icon"
+        android:title="5-Day" />
+
+</menu>
